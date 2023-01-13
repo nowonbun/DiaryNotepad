@@ -10,28 +10,27 @@ using System.Windows.Forms;
 
 namespace DiaryNotepad
 {
-    public partial class ListForm : Form
+    public partial class NewEntityPopup : Form
     {
         private Service service = null;
-        private NewEntityPopup popup;
 
-        public ListForm()
+        public NewEntityPopup()
         {
             InitializeComponent();
             service = Service.GetInstance();
-            popup = new NewEntityPopup();
-            popup.MdiParent = service.MainForm;
         }
-        protected override void OnLoad(EventArgs e)
+        public void Init()
         {
-            
-            base.OnLoad(e);
+            textBox1.Text = "";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            popup.Show();
-            popup.Focus();
+            if (String.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                textBox1.Text = "undefined title";
+            }
+            service.DataEntities.Add(DataEntity.CreateEntity(textBox1.Text));
         }
     }
 }

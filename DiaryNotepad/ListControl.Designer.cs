@@ -34,9 +34,9 @@
             // vScrollBar1
             // 
             this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(133, 0);
+            this.vScrollBar1.Location = new System.Drawing.Point(108, 0);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 572);
+            this.vScrollBar1.Size = new System.Drawing.Size(15, 500);
             this.vScrollBar1.TabIndex = 0;
             this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
@@ -44,7 +44,7 @@
             // 
             this.Controls.Add(this.vScrollBar1);
             this.Name = "ListControl";
-            this.Size = new System.Drawing.Size(150, 572);
+            this.Size = new System.Drawing.Size(123, 500);
             this.ResumeLayout(false);
 
         }

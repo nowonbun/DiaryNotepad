@@ -30,12 +30,13 @@ namespace DiaryNotepad
 
         private Service()
         {
-            // DEBUG
             dataEntities = new List<DataEntity>();
-            for (int i = 0; i < 100; i++)
+            //dataEntities.Add(DataEntity.CreateEntity("test"));
+            // DEBUG
+            /*for (int i = 0; i < 100; i++)
             {
                 dataEntities.Add(DataEntity.CreateEntity("test" + i));
-            }
+            }*/
         }
 
         public void SetStripMessage(String msg)
@@ -46,21 +47,40 @@ namespace DiaryNotepad
                 strip.Items["toolStripStatusLabel"].Text = msg;
             });
         }
-        public ListForm GetListForm()
+        public MainForm MainForm
         {
-            return MainWindow.Controls["ListForm"] as ListForm;
+            get
+            {
+                return MainWindow;
+            }
         }
-        public MemoForm GetMemoForm()
+        public ListForm istForm
         {
-            return MainWindow.Controls["MemoForm"] as MemoForm;
+            get
+            {
+                return MainWindow.Controls["ListForm"] as ListForm;
+            }
         }
-        public ImageListForm GetImageListForm()
+        public MemoForm MemoForm
         {
-            return MainWindow.Controls["ImageListForm"] as ImageListForm;
+            get
+            {
+                return MainWindow.Controls["MemoForm"] as MemoForm;
+            }
         }
-        public List<DataEntity> GetDataEntities()
+        public ImageListForm ImageListForm
         {
-            return this.dataEntities;
+            get
+            {
+                return MainWindow.Controls["ImageListForm"] as ImageListForm;
+            }
+        }
+        public List<DataEntity> DataEntities
+        {
+            get
+            {
+                return this.dataEntities;
+            }
         }
     }
 }
