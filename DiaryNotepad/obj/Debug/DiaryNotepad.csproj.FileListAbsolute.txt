@@ -1,0 +1,16 @@
+C:\work1\DiaryNotepad\DiaryNotepad\bin\Debug\DiaryNotepad.exe.config
+C:\work1\DiaryNotepad\DiaryNotepad\bin\Debug\DiaryNotepad.exe
+C:\work1\DiaryNotepad\DiaryNotepad\bin\Debug\DiaryNotepad.pdb
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.csproj.AssemblyReference.cache
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.csproj.SuggestedBindingRedirects.cache
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.MainForm.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.Properties.Resources.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.csproj.GenerateResource.cache
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.csproj.CoreCompileInputs.cache
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.exe
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.pdb
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.ListForm.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.MemoForm.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.ImageListForm.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.ListControl.resources
+C:\work1\DiaryNotepad\DiaryNotepad\obj\Debug\DiaryNotepad.ImageList.resources
