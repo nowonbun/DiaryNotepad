@@ -19,9 +19,11 @@ namespace DiaryNotepad
             InitializeComponent();
             service = Service.GetInstance();
         }
-        public void Init()
+
+        public new void Show()
         {
             textBox1.Text = "";
+            base.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +32,9 @@ namespace DiaryNotepad
             {
                 textBox1.Text = "undefined title";
             }
-            service.DataEntities.Add(DataEntity.CreateEntity(textBox1.Text));
+            service.AddDataEntities(DataEntity.CreateEntity(textBox1.Text));
+            textBox1.Text = "";
+            service.Refresh();
         }
     }
 }

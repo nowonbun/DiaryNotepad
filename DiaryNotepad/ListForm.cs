@@ -13,25 +13,22 @@ namespace DiaryNotepad
     public partial class ListForm : Form
     {
         private Service service = null;
-        private NewEntityPopup popup;
 
         public ListForm()
         {
             InitializeComponent();
             service = Service.GetInstance();
-            popup = new NewEntityPopup();
-            popup.MdiParent = service.MainForm;
         }
+
         protected override void OnLoad(EventArgs e)
         {
-            
             base.OnLoad(e);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public new void Invalidate()
         {
-            popup.Show();
-            popup.Focus();
+            base.Invalidate();
+            this.listControl1.Invalidate();
         }
     }
 }

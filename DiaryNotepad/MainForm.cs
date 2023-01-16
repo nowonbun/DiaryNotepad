@@ -12,8 +12,9 @@ namespace DiaryNotepad
 {
     public partial class MainForm : Form
     {
-        private int childFormNumber = 0;
         private static MainForm instance = null;
+        private NewEntityPopup popup;
+
         public static MainForm GetInstance()
         {
             if (instance == null)
@@ -33,6 +34,8 @@ namespace DiaryNotepad
             InitializeComponent();
             MainForm.instance = this;
             service = Service.GetInstance();
+            popup = new NewEntityPopup();
+            popup.MdiParent = service.MainForm;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -57,5 +60,10 @@ namespace DiaryNotepad
             }
         }
 
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            popup.Show();
+            popup.Focus();
+        }
     }
 }

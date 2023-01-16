@@ -31,14 +31,14 @@
             this.listControl1 = new DiaryNotepad.ListControl();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listControl1
             // 
+            this.listControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listControl1.Location = new System.Drawing.Point(0, 39);
             this.listControl1.Name = "listControl1";
-            this.listControl1.Size = new System.Drawing.Size(184, 500);
+            this.listControl1.Size = new System.Drawing.Size(184, 553);
             this.listControl1.TabIndex = 0;
             // 
             // textBox1
@@ -57,17 +57,6 @@
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button2.Location = new System.Drawing.Point(0, 545);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 47);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "추가";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // ListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -76,7 +65,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listControl1);
-            this.Controls.Add(this.button2);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -94,6 +82,5 @@
         private ListControl listControl1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
